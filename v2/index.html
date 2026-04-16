@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Ping</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Web Ping</h1>
+        <div class="input-section">
+            <input type="text" id="uriInput" placeholder="Enter URI (e.g., https://example.com)" value="https://www.youtube.com">
+            <div class="controls">
+                <button id="startBtn">Start</button>
+                <button id="stopBtn" disabled>Stop</button>
+                <button id="clearBtn">Clear</button>
+            </div>
+        </div>
+        
+        <div class="stats-section">
+            <div class="stat-item">
+                <span class="stat-label">Sent:</span>
+                <span id="sentCount">0</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">Received:</span>
+                <span id="receivedCount">0</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">Lost:</span>
+                <span id="lostCount">0</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">Loss %:</span>
+                <span id="lossPercent">0%</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">Min:</span>
+                <span id="minTime">-</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">Max:</span>
+                <span id="maxTime">-</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">Avg:</span>
+                <span id="avgTime">-</span>
+            </div>
+        </div>
+
+        <div class="output-section">
+            <div id="output" class="output"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
